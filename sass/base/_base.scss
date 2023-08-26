@@ -21,15 +21,19 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Styles de base pour les liens
- */
-///a {
-///  color: $brand-color;
-///  text-decoration: none;
+body {
+  display: flex;
+  max-width: 375px;
+  width: 100%;
+  height: 100vh;
+  @include background-gradient;
+}
 
-///  @include on-event {
-///    color: $text-color;
-///    text-decoration: underline;
-///  }
-///}
+.main_container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  @include flex-column-center;
+  @include container-glassmorphing;
+}

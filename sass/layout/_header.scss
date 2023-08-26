@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient tous les styles liés à l'en-tête du site/de l'application.
 // -----------------------------------------------------------------------------
+
+.main_container {
+
+  header {
+    @include flex-column-center;
+
+    .title {
+        @include flex-center-center;
+        position: relative;
+        width: 95%;
+        margin: 10px;
+        padding: 0;
+        @include fontKanit500(24px, $secondary-color);
+        @include title-glassmorphing;
+    }
+
+    & h2 {
+      @include fontKanit300(18px, $white);
+    }
+
+  }
+
+}

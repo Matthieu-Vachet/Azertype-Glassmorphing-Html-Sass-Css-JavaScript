@@ -2,6 +2,17 @@
 // Ce fichier contient tous les mixins Flexbox.
 // -----------------------------------------------------------------------------
 
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @mixin flex-column-center-center {
     display: flex;
