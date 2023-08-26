@@ -1,4 +1,4 @@
-& .zoneSaisie {
+.zoneSaisie {
   position: relative;
   @include fontKanit400(15px, $secondary-color);
   @include flex-row-center-center;
