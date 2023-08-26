@@ -743,7 +743,8 @@ main .zoneOptions .optionSource label {
 }
 @media screen and (min-width: 1024px) {
   body {
-    width: 80%;
+    width: 70%;
+    height: auto;
     z-index: -2;
   }
   header .title {
@@ -759,7 +760,9 @@ main .zoneOptions .optionSource label {
     font-family: "Kanit";
   }
   header h2 {
-    font-size: 45px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    font-size: 30px;
     color: #fff;
     font-weight: 500;
     font-style: normal;
@@ -770,16 +773,13 @@ main .zoneOptions .optionSource label {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  main .main_container {
-    padding-bottom: 50px;
-  }
   main .zoneOptions p {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     font-weight: 400;
     font-style: normal;
     font-family: "Kanit";
-    padding: 15px 0;
+    padding: 10px 0;
   }
   main .zoneOptions .optionSource {
     padding-bottom: 15px;
@@ -791,7 +791,7 @@ main .zoneOptions .optionSource label {
     font-weight: 400;
     font-style: normal;
     font-family: "Kanit";
-    margin-right: 30px;
+    margin-right: 25px;
   }
   main .zoneProposition {
     font-size: 35px;
@@ -800,8 +800,7 @@ main .zoneOptions .optionSource label {
     font-style: normal;
     font-family: "Kanit";
     width: 95%;
-    height: 70px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   main .zoneScore {
     font-size: 30px;
@@ -809,7 +808,7 @@ main .zoneOptions .optionSource label {
     font-weight: 400;
     font-style: normal;
     font-family: "Kanit";
-    margin: 20px;
+    margin: 10px;
   }
   main .zoneSaisie input[type=text] {
     outline: none;
@@ -818,10 +817,6 @@ main .zoneOptions .optionSource label {
     font-weight: 400;
     font-style: normal;
     font-family: "Kanit";
-  }
-  main .zonePartage {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   main button {
     padding: 5px 15px;
@@ -844,7 +839,7 @@ main .zoneOptions .optionSource label {
     justify-content: center;
     align-items: center;
     left: 95%;
-    bottom: 250px;
+    bottom: 160px;
   }
   .zoneLink ul li a {
     top: 0;

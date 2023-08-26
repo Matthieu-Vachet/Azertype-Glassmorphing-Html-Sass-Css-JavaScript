@@ -1,6 +1,7 @@
 @include desktop {
   body {
-    width: 80%;
+    width: 70%;
+    height: auto;
     z-index: -2;
   }
 
@@ -16,7 +17,9 @@
     }
 
     & h2 {
-      @include fontKanit500(45px, $white);
+      margin-top: 65px;
+      margin-bottom: 10px;
+      @include fontKanit500(30px, $white);
     }
   }
 
@@ -25,14 +28,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
-    & .main_container {
-      padding-bottom: 50px;
-    }
-
     & .zoneOptions {
       & p {
-        @include fontKanit400(30px, $white);
-        padding: 15px 0;
+        @include fontKanit400(20px, $white);
+        padding: 10px 0;
       }
 
       & .optionSource {
@@ -40,7 +39,7 @@
         & label {
           position: relative;
           @include fontKanit400(20px, $white);
-          margin-right: 30px;
+          margin-right: 25px;
         }
       }
     }
@@ -48,26 +47,19 @@
     & .zoneProposition {
       @include fontKanit400(35px, $secondary-color);
       width: 95%;
-      height: 70px;
-      margin: 20px 0;
+      margin: 10px 0;
     }
 
     & .zoneScore {
       @include fontKanit400(30px, $white);
-      margin: 20px;
+      margin: 10px;
     }
 
     & .zoneSaisie {
-
       & input[type="text"] {
         outline: none;
         @include fontKanit400(26px, $secondary-color);
       }
-    }
-
-    & .zonePartage {
-      padding-top: 20px;
-      padding-bottom: 20px;
     }
 
     button {
@@ -83,14 +75,12 @@
     }
   }
 
-
-
   .zoneLink {
     & ul {
       position: absolute;
       @include flex-column-center-center;
       left: 95%;
-      bottom: 250px;
+      bottom: 160px;
 
       & li {
         & a {
