@@ -1,0 +1,60 @@
+main {
+  position: relative;
+  @include flex-column-center-center;
+  @include container-glassmorphing;
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+
+  & .zoneOptions {
+    position: relative;
+    @include flex-column-center-center;
+
+    & p {
+      position: relative;
+      @include flex-center-center;
+      @include fontKanit300(15px, $white);
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+
+    & .optionSource {
+      position: relative;
+      @include flex-row-center-center;
+      gap: 5px;
+
+      & label {
+        position: relative;
+        @include fontKanit400(15px, $white);
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & .zoneProposition {
+    position: relative;
+    @include flex-column-center-center;
+    @include container-glassmorphing;
+    @include fontKanit400(25px, $secondary-color);
+    width: 95%;
+    height: 60px;
+    margin: 20px 0;
+  }
+
+  & .zoneSaisie {
+    position: relative;
+    @include fontKanit400(15px, $secondary-color);
+    @include flex-row-center-center;
+    width: 95%;
+
+    & input[type="text"] {
+      outline: none;
+      color: $secondary-color;
+      background: rgba(255, 255, 255, 0.35);
+
+      &:focus {
+        outline: 1px solid $secondary-color;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
 @mixin button-glassmorphing {
     background: rgba(255, 255, 255, 0.1);
     border : 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
+    border-radius: 10px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }

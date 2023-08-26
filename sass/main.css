@@ -21,7 +21,6 @@ html {
 
 body {
   display: flex;
-  max-width: 375px;
   width: 100%;
   height: 100vh;
   background-color: #ff3cac;
@@ -32,7 +31,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +41,35 @@ body {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+input[type=radio] {
+  filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  margin-right: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+}
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder {
+  color: #fff;
+  opacity: 50%;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder {
+  color: #fff;
+  opacity: 50%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -358,22 +386,23 @@ template {
   display: none;
 }
 
-.main_container header {
+header {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.main_container header .title {
+header .title {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 95%;
   margin: 10px;
-  padding: 0;
   font-size: 24px;
   color: #784ba0;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-family: "Kanit";
   background: rgba(255, 255, 255, 0.18);
@@ -383,10 +412,155 @@ template {
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
-.main_container header h2 {
+header h2 {
   font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Kanit";
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+}
+main .zoneOptions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .zoneOptions p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
   color: #fff;
   font-weight: 300;
   font-style: normal;
   font-family: "Kanit";
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+main .zoneOptions .optionSource {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .zoneOptions .optionSource label {
+  position: relative;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Kanit";
+  margin-right: 10px;
+}
+main .zoneProposition {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  font-size: 25px;
+  color: #784ba0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Kanit";
+  width: 95%;
+  height: 60px;
+  margin: 20px 0;
+}
+main .zoneSaisie {
+  position: relative;
+  font-size: 15px;
+  color: #784ba0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Kanit";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+main .zoneSaisie input[type=text] {
+  outline: none;
+  color: #784ba0;
+  background: rgba(255, 255, 255, 0.35);
+}
+main .zoneSaisie input[type=text]:focus {
+  outline: 1px solid #784ba0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5px 15px;
+  font-size: 17px;
+  color: #784ba0;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Kanit";
+  color: #784ba0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(-70px);
+  transition: 0.4s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #784ba0;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button:hover::before {
+  transform: skewX(45deg) translateX(110px);
+}
+
+button:focus {
+  background-color: var(--color-secondary);
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
