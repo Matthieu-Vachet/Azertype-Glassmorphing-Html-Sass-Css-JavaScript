@@ -1,0 +1,11 @@
+.zoneScore {
+    position: relative;
+    @include flex-row-center-center;
+    @include fontKanit400(20px, $white);
+    margin: 15px;
+
+    & span {
+        color: $secondary-color;
+        padding-left: 10px;
+    }
+}

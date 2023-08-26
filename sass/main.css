@@ -518,6 +518,24 @@ main .zoneOptions .optionSource label {
   outline: 1px solid #784ba0;
 }
 
+.zoneScore {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Kanit";
+  margin: 15px;
+}
+.zoneScore span {
+  color: #784ba0;
+  padding-left: 10px;
+}
+
 button {
   display: flex;
   justify-content: center;
