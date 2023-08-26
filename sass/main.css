@@ -659,7 +659,14 @@ main .zoneOptions .optionSource label {
 .popupBackground .popup input:focus {
   outline: #784ba0 1px solid;
 }
-.popupBackground .popup button {
+.popupBackground .popup form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.popupBackground .popup form button {
   margin: 5px;
 }
 
