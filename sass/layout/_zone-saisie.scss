@@ -1,0 +1,16 @@
+& .zoneSaisie {
+  position: relative;
+  @include fontKanit400(15px, $secondary-color);
+  @include flex-row-center-center;
+  width: 95%;
+
+  & input[type="text"] {
+    outline: none;
+    color: $secondary-color;
+    background: rgba(255, 255, 255, 0.35);
+
+    &:focus {
+      outline: 1px solid $secondary-color;
+    }
+  }
+}
