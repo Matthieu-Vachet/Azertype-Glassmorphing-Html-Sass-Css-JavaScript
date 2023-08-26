@@ -777,6 +777,16 @@ main .zoneOptions .optionSource label {
     z-index: 2;
   }
 }
+@media screen and (min-width: 1240px) {
+  .zoneLink ul {
+    bottom: 130px;
+    left: 885px;
+  }
+  .zoneLink ul li a:hover {
+    transform: translate(-45px);
+    right: -45px;
+  }
+}
 button {
   display: flex;
   justify-content: center;
