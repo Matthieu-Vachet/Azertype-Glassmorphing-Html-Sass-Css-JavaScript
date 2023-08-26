@@ -4,18 +4,15 @@
 @import
   './utils/variables',
   './utils/functions',
-  './utils/mixins';
+  './utils/mixins-fonts';
 
 // 2. Vendors
-@import
-  '';
+
 
 // 3. Trucs de base
 @import
   './base/base',
   './base/fonts',
-  './base/typography',
-  './base/helpers',
   './base/normalize';
 
 // 4. Sections liées à la mise en page
