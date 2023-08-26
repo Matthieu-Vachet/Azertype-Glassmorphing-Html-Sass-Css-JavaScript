@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient tous les mixins background.
+// -----------------------------------------------------------------------------
+
+
+// background gradient //
+
+@mixin background-gradient {
+    background-color: $main-color;
+    background: -moz-linear-gradient(225deg, $main-color 0%, $secondary-color 50%, $third-color 100%);
+    background: -webkit-linear-gradient(225deg, $main-color 0%, $secondary-color 50%, $third-color 100%);
+    background: linear-gradient(225deg, $main-color 0%, $secondary-color 50%, $third-color 100%);
+}
