@@ -1,0 +1,69 @@
+@include tablette {
+  html {
+    width: 100%;
+    height: 100%;
+    @include flex-column-center-center;
+  }
+
+  body {
+    width: 90%;
+  }
+
+  header {
+    & .title {
+      position: absolute;
+      top: -20%;
+      width: 450px;
+      height: 80px;
+
+      & h1 {
+        font-size: 40px;
+      }
+    }
+
+    & h2 {
+      margin-top: 80px;
+      font-size: 25px;
+    }
+  }
+
+  main {
+    & .zoneOptions {
+      & p {
+        font-size: 18px;
+      }
+
+      & .optionSource {
+        & label {
+          font-size: 18px;
+        }
+      }
+    }
+
+    & .zoneProposition {
+      @include fontKanit400(40px, $secondary-color);
+    }
+
+    & .zoneScore {
+      @include fontKanit400(25px, $white);
+    }
+
+    & .zoneLink {
+      & ul {
+        @include flex-row-center-center;
+        padding: 5px 0;
+      }
+    }
+
+
+    & button {
+        @include fontKanit500(20px, $secondary-color);
+
+        &:hover::before {
+            transform: skewX(45deg) translateX(120px);
+          }
+      }
+  }
+}
+
+
