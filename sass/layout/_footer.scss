@@ -1,3 +1,15 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient tous les styles liés au pied de page du site/de l'application.
 // -----------------------------------------------------------------------------
+
+footer {
+  position: relative;
+  @include flex-center-center;
+  width: 100%;
+  @include fontKanit400(20px, $white);
+
+  & p {
+    position: relative;
+    margin: 0;
+  }
+}

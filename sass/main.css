@@ -398,13 +398,9 @@ header .title {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 95%;
+  width: 330px;
+  height: 60px;
   margin: 10px;
-  font-size: 24px;
-  color: #784ba0;
-  font-weight: 600;
-  font-style: normal;
-  font-family: "Kanit";
   background: rgba(255, 255, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
@@ -412,12 +408,37 @@ header .title {
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+header .title h1 {
+  font-size: 30px;
+  color: #784ba0;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Kanit";
+  margin: 0;
+}
 header h2 {
   font-size: 18px;
   color: #fff;
   font-weight: 500;
   font-style: normal;
   font-family: "Kanit";
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Kanit";
+}
+footer p {
+  position: relative;
+  margin: 0;
 }
 
 main {

@@ -9,10 +9,15 @@ header {
   & .title {
     @include flex-center-center;
     position: relative;
-    width: 95%;
+    width: 330px;
+    height: 60px;
     margin: 10px;
-    @include fontKanit600(24px, $secondary-color);
     @include title-glassmorphing;
+
+    & h1 {
+      @include fontKanit600(30px, $secondary-color);
+      margin: 0;
+    }
   }
 
   & h2 {
