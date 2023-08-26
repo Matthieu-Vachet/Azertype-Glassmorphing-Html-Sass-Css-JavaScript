@@ -3,7 +3,6 @@
 // 1. Configuration et aides
 @import
   './utils/variables',
-  './utils/functions',
   './utils/mixins-fonts',
   './utils/mixins-glassmorphing',
   './utils/mixins-background',
@@ -21,7 +20,14 @@
 // 4. Sections liées à la mise en page
 @import
   './layout/header',
-  './layout/footer';
+  './layout/footer',
+  './layout/zone-option',
+  './layout/zone-proposition',
+  './layout/zone-saisie',
+  './layout/zone-score',
+  './layout/zone-link',
+  './layout/zone-partage',
+  './layout/popup';
 
 // 5. Composants
 @import
