@@ -5,7 +5,7 @@
 /**
  * Configurer un modèle de boîte décent sur l'élément racine
  */
-html {
+ html {
   box-sizing: border-box;
 }
 
@@ -29,6 +29,7 @@ html {
 body {
   @include flex-column-center-center;
   @include background-gradient;
+  z-index: -2;
 }
 
 .main_container {
@@ -38,6 +39,7 @@ body {
   padding: 0;
   @include flex-column-center;
   @include container-glassmorphing;
+  z-index: 1;
 }
 
 input[type="radio"] {

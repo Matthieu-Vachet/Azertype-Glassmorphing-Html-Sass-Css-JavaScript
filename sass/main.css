@@ -31,6 +31,7 @@ body {
   align-items: center;
   background-color: #ff3cac;
   background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  z-index: -2;
 }
 
 .main_container {
@@ -47,6 +48,7 @@ body {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  z-index: 1;
 }
 
 input[type=radio] {
@@ -621,6 +623,7 @@ main .zoneOptions .optionSource label {
   width: 100vw;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  z-index: 1;
 }
 .popupBackground .popup {
   position: absolute;
@@ -644,6 +647,7 @@ main .zoneOptions .optionSource label {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  z-index: 1;
 }
 .popupBackground .popup div {
   font-size: 25px;
@@ -735,6 +739,42 @@ main .zoneOptions .optionSource label {
   }
   main button:hover::before {
     transform: skewX(45deg) translateX(120px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 75%;
+    z-index: -2;
+  }
+  header .title {
+    position: absolute;
+    top: -30%;
+    z-index: 1;
+  }
+  main {
+    width: 85%;
+  }
+  .zoneLink ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+    left: 730px;
+  }
+  .zoneLink ul li a {
+    top: 0;
+    right: 0;
+    z-index: 0;
+    transition: right 0.6s, z-index 0s, transform 0.6s;
+    transition-delay: 0.4s, 0.4s, 0s;
+  }
+  .zoneLink ul li a:hover {
+    transition-delay: 0s, 0.5s, 0.5s;
+    transform: translate(-38px);
+    right: -38px;
+    z-index: 2;
   }
 }
 button {

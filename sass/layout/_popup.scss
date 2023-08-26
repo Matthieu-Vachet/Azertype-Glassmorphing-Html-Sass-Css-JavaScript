@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   backdrop-filter: blur(10px);
+  z-index: 1;
 
   & .popup {
     position: absolute;
@@ -18,6 +19,7 @@
     text-align: center;
     @include fontKanit400(18px, $white);
     @include container-glassmorphing;
+    z-index: 1;
 
     & div {
       font-size: 25px;
