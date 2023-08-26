@@ -536,6 +536,57 @@ main .zoneOptions .optionSource label {
   padding-left: 10px;
 }
 
+.zoneLink {
+  position: relative;
+  width: 100%;
+}
+.zoneLink ul {
+  position: relative;
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.zoneLink ul li {
+  position: relative;
+  margin: 5px;
+}
+.zoneLink ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  font-size: 2.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-decoration: none;
+  overflow: hidden;
+}
+.zoneLink ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(-70px);
+  transition: 0.5s;
+}
+.zoneLink ul li a:hover::before {
+  transform: skewX(45deg) translateX(110px);
+}
+
 button {
   display: flex;
   justify-content: center;

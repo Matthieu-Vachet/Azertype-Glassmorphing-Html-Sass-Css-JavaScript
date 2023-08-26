@@ -1,0 +1,43 @@
+.zoneLink {
+  position: relative;
+  width: 100%;
+
+  & ul {
+    position: relative;
+    list-style: none;
+    padding: 10px 0;
+    @include flex-row-around-center;
+
+    & li {
+      position: relative;
+      margin: 5px;
+
+      & a {
+        position: relative;
+        @include flex-center-center;
+        width: 70px;
+        height: 70px;
+        color: $white;
+        font-size: 2.5rem;
+        @include link-glassmorphing;
+        text-decoration: none;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.5);
+          transform: skewX(45deg) translateX(-70px);
+          transition: 0.5s;
+        }
+        &:hover::before {
+          transform: skewX(45deg) translateX(110px);
+        }
+      }
+    }
+  }
+}
