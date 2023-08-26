@@ -2,7 +2,6 @@
 // Ce fichier contient toutes les variables Sass.
 // -----------------------------------------------------------------------------
 
-
 // Background-colors //
 
 $main-color: #ff3cac;
@@ -14,3 +13,12 @@ $third-color: #2b86c5;
 $white: #fff;
 $black: #000;
 
+// Breackpoints //
+
+$breakpoint: (
+  "mobile": 375px,
+  "tablette": 768px,
+  "desktop": 1024px,
+  "desktop-medium": 1240px,
+  "desktop-large": 1440px,
+);

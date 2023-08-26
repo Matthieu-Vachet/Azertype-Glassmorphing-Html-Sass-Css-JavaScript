@@ -2,44 +2,99 @@
 <html lang="fr">
 
 <head>
-
-    <title>Nouveau</title>
-
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzerType</title>
+    <!-- Inclusion du fichier css pour le style du jeu -->
+    <link rel="stylesheet" href="style/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/2ab0c45394.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script></script>
-
+    <!-- Inclusion des 3 scripts nécessaires pour faire fonctionner le jeu -->
+    <!-- Attention, l'ordre des fichiers js est important.  -->
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
-    <h1>Hello word hi all words</h1>
+    <!-- <div class="forme">
+        <div class="circle1"></div>
+        <div class="rectangle1"></div>
+    </div> -->
+    <div class="main_container">
+        <!-- HEADER -->
+        <header>
+            <div class="title">
+                <h1>AzerType</h1>
+            </div>
+            <h2>L'application pour écrire plus vite !</h2>
+        </header>
 
-    <header>
 
-        <nav>
 
-        </nav>
+        <!-- MAIN -->
+        <main>
+            <div class="zoneOptions">
+                <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
+                <div class="optionSource">
+                    <input type="radio" name="optionSource" id="mots" value="1" checked>
+                    <label for="mots">Mots</label>
+                    <input type="radio" name="optionSource" id="phrases" value="2">
+                    <label for="phrases">Phrases</label>
+                </div>
+            </div>
 
-    </header>
+            <div class="zoneProposition">
+                Azerty
+            </div>
 
-    <main>
+            <div class="zoneSaisie">
+                <input type="text" id="inputEcriture" name="inputEcriture">
+                <button id="btnValiderMot">Valider</button>
+            </div>
 
-    </main>
+            <div class="zoneScore">
+                Votre score : <span>0</span>
+            </div>
 
-    <footer>
+            <div class="zonePartage">
+                <button>Partager</button>
+            </div>
 
-    </footer>
+        </main>
+        <footer>
+            @Copyright : Vachet Matthieu.
+        </footer>
+    </div>
+    <div class="link">
+        <ul>
+            <li><a href="https://github.com/Matthieu-Vachet/AzerType-Javascipt"><i
+                        class="fa-brands fa-square-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matthieu-vachet-46b7231b0/"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.matthieuvachet.adkynet.fr/"><i class="fa-solid fa-house"></i></a></li>
+        </ul>
+    </div>
+    <!-- FOOTER -->
 
+
+    <!-- Popup de partage -->
+    <div class="popupBackground">
+        <div class="popup">
+            <div>Partagez votre score</div>
+            <form novalidate>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <label for="email">Avec qui voulez-vous partager votre score ?</label>
+                <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                <button id="btnEnvoyerMail">Envoyer</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
