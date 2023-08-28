@@ -1,54 +1,53 @@
 @mixin mobile {
-        @media screen and (min-width: map-get($breakpoint, mobile)) {
-            @content;
-        }
-    }
+  @media screen and (min-width: map-get($breakpoint, mobile)) {
+    @content;
+  }
+}
 
 @mixin tablette {
-    @media screen and (min-width: map-get($breakpoint, tablette)) {
-      @content;
-    }
+  @media screen and (min-width: map-get($breakpoint, tablette)) {
+    @content;
   }
-  
-  // 1024 pixels //
-  @mixin desktop {
-    @media screen and (min-width: map-get($breakpoint, desktop)) {
-      @content;
-    }
-  }
-  
-  // 1240 pixels //
-  @mixin desktop-medium {
-    @media screen and (min-width: map-get($breakpoint, desktop-medium)) {
-      @content;
-    }
-  }
-  
-  // 1440 pixels //
-  @mixin desktop-large {
-    @media screen and (min-width: map-get($breakpoint, desktop-large)) {
-      @content;
-    }
-  }
+}
 
-  // 1800 pixels //
-  @mixin desktop-xlarge {
-    @media screen and (min-width: map-get($breakpoint, desktop-xlarge)) {
-      @content;
-    }
+// 1024 pixels //
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoint, desktop)) {
+    @content;
   }
+}
 
-  // 2560 pixels //
-  @mixin desktop-4k {
-    @media screen and (min-width: map-get($breakpoint, desktop-4k)) {
-      @content;
-    }
+// 1240 pixels //
+@mixin desktop-medium {
+  @media screen and (min-width: map-get($breakpoint, desktop-medium)) {
+    @content;
   }
+}
 
-  // 2560 pixels //
-  @mixin desktop-4k-2 {
-    @media screen and (min-width: map-get($breakpoint, desktop-4k-2)) {
-      @content;
-    }
+// 1440 pixels //
+@mixin desktop-large {
+  @media screen and (min-width: map-get($breakpoint, desktop-large)) {
+    @content;
   }
-  
+}
+
+// 1800 pixels //
+@mixin desktop-xlarge {
+  @media screen and (min-width: map-get($breakpoint, desktop-xlarge)) {
+    @content;
+  }
+}
+
+// 2560 pixels //
+@mixin desktop-4k {
+  @media screen and (min-width: map-get($breakpoint, desktop-4k)) {
+    @content;
+  }
+}
+
+// 2560 pixels //
+@mixin desktop-4k-2 {
+  @media screen and (min-width: map-get($breakpoint, desktop-4k-2)) {
+    @content;
+  }
+}

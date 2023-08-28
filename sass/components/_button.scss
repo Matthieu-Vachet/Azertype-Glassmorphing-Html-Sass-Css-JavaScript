@@ -3,40 +3,40 @@
 // -----------------------------------------------------------------------------
 
 button {
-    @include flex-center-center;
-    position: relative;
-    padding: 5px 15px;
-    @include fontKanit500(17px, $secondary-color);
-    color: $secondary-color;
-    @include button-glassmorphing;
-    overflow: hidden;
-    transition: 0.5s ease;
-  }
-  
-  button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(45deg) translateX(-70px);
-    transition: 0.4s;
-  }
-  
-  button:hover {
-    color: $white;
-    background-color: $secondary-color;
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  
-  button:hover::before {
-    transform: skewX(45deg) translateX(110px);
-  }
-  
-  button:focus {
-    background-color: var(--color-secondary);
-    color: $white;
-  }
+  @include flex-center-center;
+  position: relative;
+  padding: 5px 15px;
+  @include fontKanit500(17px, $secondary-color);
+  color: $secondary-color;
+  @include button-glassmorphing;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(-70px);
+  transition: 0.4s;
+}
+
+button:hover {
+  color: $white;
+  background-color: $secondary-color;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button:hover::before {
+  transform: skewX(45deg) translateX(110px);
+}
+
+button:focus {
+  background-color: var(--color-secondary);
+  color: $white;
+}

@@ -1,51 +1,30 @@
 @charset "UTF-8";
 
 // 1. Configuration et aides
-@import
-  './utils/variables',
-  './utils/mixins-fonts',
-  './utils/mixins-glassmorphing',
-  './utils/mixins-background',
-  './utils/mixins-flexbox',
-  './utils/mixins-breackpoint';
+@import "./utils/variables", "./utils/mixins-fonts",
+  "./utils/mixins-glassmorphing", "./utils/mixins-background",
+  "./utils/mixins-flexbox", "./utils/mixins-breackpoint";
 
 // 2. Vendors
 
-
 // 3. Trucs de base
-@import
-  './base/base',
-  './base/fonts',
-  './base/normalize';
+@import "./base/base", "./base/fonts", "./base/normalize";
 
 // 4. Sections liées à la mise en page
-@import
-  './layout/header',
-  './layout/footer',
-  './layout/zone-option',
-  './layout/zone-proposition',
-  './layout/zone-saisie',
-  './layout/zone-score',
-  './layout/zone-link',
-  './layout/zone-partage',
-  './layout/popup',
-  './layout/responsive/responsive-tabeltte',
-  './layout/responsive/responsive-desktop',
-  './layout/responsive/responsive-desktop-medium',
-  './layout/responsive/responsive-desktop-large',
-  './layout/responsive/responsive-desktop-xlarge',
-  './layout/responsive/responsive-desktop-4k',
-  './layout/responsive/responsive-desktop-4k-2';
+@import "./layout/header", "./layout/footer", "./layout/zone-option",
+  "./layout/zone-proposition", "./layout/zone-saisie", "./layout/zone-score",
+  "./layout/zone-link", "./layout/popup",
+  "./layout/responsive/responsive-tabeltte",
+  "./layout/responsive/responsive-desktop",
+  "./layout/responsive/responsive-desktop-medium",
+  "./layout/responsive/responsive-desktop-large",
+  "./layout/responsive/responsive-desktop-xlarge",
+  "./layout/responsive/responsive-desktop-4k",
+  "./layout/responsive/responsive-desktop-4k-2";
 
 // 5. Composants
-@import
-  './components/button',
-  './components/formes';
+@import "./components/button", "./components/formes";
 
 // 6. Styles spécifiques à la page
-@import
-  './pages/home';
 
 // 7. Themes
-@import
-  './themes/default';

@@ -1,10 +1,10 @@
 /*********************************************************************************
- * 
- * Point d'entrée, c'est lui qui intialise le jeu et lance la boucle de jeu. 
- * 
+ *
+ * Point d'entrée, c'est lui qui intialise le jeu et lance la boucle de jeu.
+ *
  *********************************************************************************/
 
-lancerJeu()
+lancerJeu();
 
 // J'ai mis ce code en commentaire, nous pourrons le récupérer lorsque nous en auront besoin :
 

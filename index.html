@@ -7,13 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AzerType</title>
-    <!-- Inclusion du fichier css pour le style du jeu -->
+
     <link rel="stylesheet" href="/sass/main.css">
 
     <script src="https://kit.fontawesome.com/2ab0c45394.js" crossorigin="anonymous"></script>
 
-    <!-- Inclusion des 3 scripts nécessaires pour faire fonctionner le jeu -->
-    <!-- Attention, l'ordre des fichiers js est important.  -->
     <script src="js/config.js" defer></script>
     <script src="js/popup.js" defer></script>
     <script src="js/script.js" defer></script>
@@ -21,13 +19,18 @@
 </head>
 
 <body>
+
+    <!--  FORMES BACKGROUND START  -->
     <div class="forme">
         <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
         <div class="circle4"></div>
     </div>
+    <!--  FORMES BACKGROUND END  -->
+
     <div class="main_container">
+
         <!-- HEADER -->
         <header>
             <div class="title">
@@ -35,10 +38,9 @@
             </div>
             <h2>L'application pour écrire plus vite !</h2>
         </header>
+        <!--  HEADER END  -->
 
-
-
-        <!-- MAIN -->
+        <!-- MAIN START-->
         <main>
             <div class="zoneOptions">
                 <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
@@ -49,31 +51,25 @@
                     <label for="phrases">Phrases</label>
                 </div>
             </div>
-
             <div class="zoneProposition">
                 Azerty
             </div>
-
             <div class="zoneSaisie">
                 <input type="text" id="inputEcriture" name="inputEcriture">
                 <button id="btnValiderMot">Valider</button>
             </div>
-
             <div class="zoneScore">
                 Votre score : <span>0</span>
             </div>
-
             <div class="zonePartage">
                 <button>Partager</button>
             </div>
-
-
-
         </main>
-
-
+        <!--  MAIN END  -->
 
     </div>
+
+    <!--  FOOTER START  -->
     <footer>
         <p>@ Copyright : Vachet Matthieu.</p>
     </footer>
@@ -85,11 +81,9 @@
             <li><a href="https://www.matthieuvachet.adkynet.fr/"><i class="fa-solid fa-house"></i></a></li>
         </ul>
     </div>
+    <!-- FOOTER END -->
 
-    <!-- FOOTER -->
-
-
-    <!-- Popup de partage -->
+    <!-- POPUP PARTAGE START -->
     <div class="popupBackground">
         <div class="popup">
             <div>Partagez votre score</div>
@@ -102,6 +96,8 @@
             </form>
         </div>
     </div>
+    <!-- POPUP PARTAGE END -->
+
 </body>
 
 </html>

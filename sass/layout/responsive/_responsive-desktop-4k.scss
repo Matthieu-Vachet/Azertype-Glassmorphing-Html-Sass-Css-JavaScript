@@ -1,44 +1,41 @@
 @include desktop-4k {
-
   body {
     & .forme {
       & .circle1 {
         top: 270px;
         left: 700px;
       }
-    
+
       & .circle2 {
         top: 800px;
         right: 730px;
       }
-    
+
       & .circle3 {
         top: 330px;
         right: 800px;
       }
-    
+
       & .circle4 {
         top: 700px;
-        right:6%;
+        right: 6%;
       }
     }
   }
-    .main_container {
-        width: 50%;
-    }
+  .main_container {
+    width: 50%;
+  }
 
-    .zoneLink {
-        & ul {
-          left: 73%;
-          
-      
-          & li {
-            & a:hover {
-              transform: translate(-45px);
-              right: -45px;
-            }
-          }
+  .zoneLink {
+    & ul {
+      left: 73%;
+
+      & li {
+        & a:hover {
+          transform: translate(-45px);
+          right: -45px;
         }
       }
-
+    }
+  }
 }

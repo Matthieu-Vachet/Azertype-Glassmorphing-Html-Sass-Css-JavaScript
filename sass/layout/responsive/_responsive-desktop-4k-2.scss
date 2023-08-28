@@ -1,26 +1,25 @@
 @include desktop-4k {
+  body {
+    & .forme {
+      & .circle1 {
+        top: 250px;
+        left: 750px;
+      }
 
-    body {
-      & .forme {
-        & .circle1 {
-          top: 250px;
-          left: 750px;
-        }
-      
-        & .circle2 {
-          top: 800px;
-          right: 800px;
-        }
-      
-        & .circle3 {
-          top: 330px;
-          right: 850px;
-        }
-      
-        & .circle4 {
-          top: 730px;
-          right:60%;
-        }
+      & .circle2 {
+        top: 800px;
+        right: 800px;
+      }
+
+      & .circle3 {
+        top: 330px;
+        right: 850px;
+      }
+
+      & .circle4 {
+        top: 730px;
+        right: 60%;
       }
     }
   }
+}
