@@ -34,11 +34,13 @@
   './layout/responsive/responsive-desktop-medium',
   './layout/responsive/responsive-desktop-large',
   './layout/responsive/responsive-desktop-xlarge',
-  './layout/responsive/responsive-desktop-4k';
+  './layout/responsive/responsive-desktop-4k',
+  './layout/responsive/responsive-desktop-4k-2';
 
 // 5. Composants
 @import
-  './components/button';
+  './components/button',
+  './components/formes';
 
 // 6. Styles spécifiques à la page
 @import

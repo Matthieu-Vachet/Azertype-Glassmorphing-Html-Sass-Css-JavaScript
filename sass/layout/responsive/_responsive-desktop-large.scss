@@ -1,4 +1,28 @@
 @include desktop-large {
+
+  body {
+    & .forme {
+      & .circle1 {
+        top: 240px;
+        left: 250px;
+      }
+    
+      & .circle2 {
+        top: 800px;
+        right: 270px;
+      }
+    
+      & .circle3 {
+        top: 330px;
+        right: 350px;
+      }
+    
+      & .circle4 {
+        top: 700px;
+        right:65%;
+      }
+    }
+  }
     .main_container {
         width: 80%;
     }

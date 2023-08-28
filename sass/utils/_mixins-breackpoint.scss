@@ -44,4 +44,11 @@
       @content;
     }
   }
+
+  // 2560 pixels //
+  @mixin desktop-4k-2 {
+    @media screen and (min-width: map-get($breakpoint, desktop-4k-2)) {
+      @content;
+    }
+  }
   

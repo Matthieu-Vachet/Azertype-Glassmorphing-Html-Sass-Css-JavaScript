@@ -3,6 +3,28 @@
     width: 70%;
     height: auto;
     z-index: -2;
+
+    & .forme {
+      & .circle1 {
+        top: 240px;
+        left: 100px;
+      }
+    
+      & .circle2 {
+        top: 800px;
+        right: 100px;
+      }
+    
+      & .circle3 {
+        top: 330px;
+        right: 170px;
+      }
+    
+      & .circle4 {
+        top: 700px;
+        right:68%;
+      }
+    }
   }
 
   header {

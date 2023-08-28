@@ -22,6 +22,7 @@ html {
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -690,6 +691,22 @@ main .zoneOptions .optionSource label {
   body {
     width: 90%;
   }
+  body .forme .circle1 {
+    top: 230px;
+    left: 3px;
+  }
+  body .forme .circle2 {
+    top: 720px;
+    right: 3px;
+  }
+  body .forme .circle3 {
+    top: 300px;
+    right: 60px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 60%;
+  }
   header .title {
     position: absolute;
     top: -20%;
@@ -746,6 +763,22 @@ main .zoneOptions .optionSource label {
     width: 70%;
     height: auto;
     z-index: -2;
+  }
+  body .forme .circle1 {
+    top: 240px;
+    left: 100px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 100px;
+  }
+  body .forme .circle3 {
+    top: 330px;
+    right: 170px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 68%;
   }
   header .title {
     position: absolute;
@@ -856,6 +889,22 @@ main .zoneOptions .optionSource label {
   }
 }
 @media screen and (min-width: 1240px) {
+  body .forme .circle1 {
+    top: 240px;
+    left: 100px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 150px;
+  }
+  body .forme .circle3 {
+    top: 330px;
+    right: 220px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 68%;
+  }
   .zoneLink ul {
     left: 96%;
   }
@@ -865,6 +914,22 @@ main .zoneOptions .optionSource label {
   }
 }
 @media screen and (min-width: 1440px) {
+  body .forme .circle1 {
+    top: 240px;
+    left: 250px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 270px;
+  }
+  body .forme .circle3 {
+    top: 330px;
+    right: 350px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 65%;
+  }
   .main_container {
     width: 80%;
   }
@@ -877,11 +942,43 @@ main .zoneOptions .optionSource label {
   }
 }
 @media screen and (min-width: 1800px) {
+  body .forme .circle1 {
+    top: 260px;
+    left: 350px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 350px;
+  }
+  body .forme .circle3 {
+    top: 340px;
+    right: 450px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 65%;
+  }
   .zoneLink ul {
     left: 87%;
   }
 }
 @media screen and (min-width: 2360px) {
+  body .forme .circle1 {
+    top: 270px;
+    left: 700px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 730px;
+  }
+  body .forme .circle3 {
+    top: 330px;
+    right: 800px;
+  }
+  body .forme .circle4 {
+    top: 700px;
+    right: 6%;
+  }
   .main_container {
     width: 50%;
   }
@@ -891,6 +988,24 @@ main .zoneOptions .optionSource label {
   .zoneLink ul li a:hover {
     transform: translate(-45px);
     right: -45px;
+  }
+}
+@media screen and (min-width: 2360px) {
+  body .forme .circle1 {
+    top: 250px;
+    left: 750px;
+  }
+  body .forme .circle2 {
+    top: 800px;
+    right: 800px;
+  }
+  body .forme .circle3 {
+    top: 330px;
+    right: 850px;
+  }
+  body .forme .circle4 {
+    top: 730px;
+    right: 60%;
   }
 }
 button {
@@ -940,4 +1055,66 @@ button:hover::before {
 button:focus {
   background-color: var(--color-secondary);
   color: #fff;
+}
+
+.forme .circle1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  opacity: 0.4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #12c2e9; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(250deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.forme .circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 420px;
+  right: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  opacity: 0.4;
+  background: #e55d87; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #5fc3e4, #e55d87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.forme .circle3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 50%;
+}
+.forme .circle4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.4;
+  top: 350px;
+  right: 60%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

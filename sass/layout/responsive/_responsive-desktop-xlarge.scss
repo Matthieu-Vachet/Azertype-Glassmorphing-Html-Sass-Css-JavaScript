@@ -1,5 +1,29 @@
 @include desktop-xlarge {
 
+  body {
+    & .forme {
+      & .circle1 {
+        top: 260px;
+        left: 350px;
+      }
+    
+      & .circle2 {
+        top: 800px;
+        right: 350px;
+      }
+    
+      & .circle3 {
+        top: 340px;
+        right: 450px;
+      }
+    
+      & .circle4 {
+        top: 700px;
+        right:65%;
+      }
+    }
+  }
+
     .zoneLink {
         & ul {
           left: 87%;

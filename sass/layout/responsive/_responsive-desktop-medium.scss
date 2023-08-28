@@ -1,4 +1,28 @@
 @include desktop-medium {
+
+  body {
+    & .forme {
+      & .circle1 {
+        top: 240px;
+        left: 100px;
+      }
+    
+      & .circle2 {
+        top: 800px;
+        right: 150px;
+      }
+    
+      & .circle3 {
+        top: 330px;
+        right: 220px;
+      }
+    
+      & .circle4 {
+        top: 700px;
+        right:68%;
+      }
+    }
+  }
     .zoneLink {
         & ul {
           left: 96%;
