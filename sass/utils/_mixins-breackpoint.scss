@@ -30,3 +30,18 @@
       @content;
     }
   }
+
+  // 1800 pixels //
+  @mixin desktop-xlarge {
+    @media screen and (min-width: map-get($breakpoint, desktop-xlarge)) {
+      @content;
+    }
+  }
+
+  // 2560 pixels //
+  @mixin desktop-4k {
+    @media screen and (min-width: map-get($breakpoint, desktop-4k)) {
+      @content;
+    }
+  }
+  

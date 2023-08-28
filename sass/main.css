@@ -864,6 +864,35 @@ main .zoneOptions .optionSource label {
     right: -45px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .main_container {
+    width: 80%;
+  }
+  .zoneLink ul {
+    left: 86%;
+  }
+  .zoneLink ul li a:hover {
+    transform: translate(-45px);
+    right: -45px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .zoneLink ul {
+    left: 87%;
+  }
+}
+@media screen and (min-width: 2360px) {
+  .main_container {
+    width: 50%;
+  }
+  .zoneLink ul {
+    left: 73%;
+  }
+  .zoneLink ul li a:hover {
+    transform: translate(-45px);
+    right: -45px;
+  }
+}
 button {
   display: flex;
   justify-content: center;

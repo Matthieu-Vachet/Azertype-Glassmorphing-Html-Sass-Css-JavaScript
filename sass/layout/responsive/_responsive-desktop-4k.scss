@@ -1,0 +1,20 @@
+@include desktop-4k {
+    .main_container {
+        width: 50%;
+    }
+
+    .zoneLink {
+        & ul {
+          left: 73%;
+          
+      
+          & li {
+            & a:hover {
+              transform: translate(-45px);
+              right: -45px;
+            }
+          }
+        }
+      }
+
+}

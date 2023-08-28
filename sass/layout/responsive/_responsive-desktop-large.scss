@@ -1,0 +1,19 @@
+@include desktop-large {
+    .main_container {
+        width: 80%;
+    }
+
+    .zoneLink {
+        & ul {
+          left: 86%;
+          
+      
+          & li {
+            & a:hover {
+              transform: translate(-45px);
+              right: -45px;
+            }
+          }
+        }
+      }
+}
